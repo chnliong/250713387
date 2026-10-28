@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Formulir Pendaftaran Lomba IT-COMP</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <h1>Formulir Pendaftaran Lomba IT-COMP</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        <table id="tabledata" cellspacing="4" cellpadding="4">
+            <tr>
+                <td class="tdpertama">
+                    <label for="namatim"><strong>Nama Tim</strong></label>
+                </td>
+                <td class="tdsisa">
+                    <input type="text" id="namatim" name="namatim" size="30"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdpertama">
+                    <label for="ketua"><strong>Nama Ketua Tim</strong></label>
+                </td>
+                <td class="tdsisa">
+                    <input type="text" id="ketua" name="ketua" size="30"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdpertama">
+                    <label for="jumlah"><strong>Jumlah Anggota</strong></label>
+                </td>
+                <td class="tdsisa">
+                    <select id="jumlah" name="jumlah">
+                        <option>1 Orang</option>
+                        <option>2 Orang</option>
+                        <option>3 Orang</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdpertama">
+                    <label for="telepon"><strong>Nomor Telepon Ketua Tim</strong></label>
+                </td>
+                <td class="tdsisa">
+                    <input type="text" id="telepon" name="telepon" size="30" />
+                </td>
+            </tr>
+            <tr>
+                <td class="tdpertama">
+                    <label for="instansi">
+                        <strong>Asal instansi</strong>
+                    </label>
+                </td>
+                <td class="tdsisa">
+                    <input type="text" id="instansi" name="instansi" size="30"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdpertama">
+                    <strong>Bidang Lomba</strong>
+                </td>
+                <td class="tdsisa">
+                    <p>
+                        <input type="radio" id="coding" name="bidang"
+                            value="Coding"/>
+                        <label for="coding">Coding</label>
+                        <input type="radio" id="desain" name="bidang"
+                            value="Desain"/>
+                        <label for="desain">Desain</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="video" name="bidang"
+                            value="Video"/>
+                        <label for="video">Video</label>
+                        <input type="radio" id="essay" name="bidang"
+                            value="Essay"/>
+                        <label for="essay">Essay</label>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdpertama">
+                    <strong>Kategori Peserta</strong>
+                </td>
+                <td class="tdsisa">
+                    <input type="radio" id="mahasiswa" name="peserta"
+                        value="Mahasiswa"/>
+                    <label for="mahasiswa">Mahasiswa</label>
+                    <input type="radio" id="umum" name="peserta"
+                        value="Umum"/>
+                    <label for="umum">Umum</label>
+                    <input type="radio" id="sma" name="peserta"
+                        value="SMA"/>
+                    <label for="SMA">SMA</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdpertama">
+                    <label for="deskripsi">
+                        <strong>Deskripsi Karya</strong>
+                    </label>
+                </td>
+                <td class="tdsisa">
+                    <textarea id="deskripsi" name="deskripsi"
+                            rows="10" cols="30"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td  class="tdpertama">
+                    <label for="datapeserta">
+                        <strong>Data Anggota Tim</strong>
+                    </label>
+                </td>
+                <td class="tdsisa">
+                    <textarea id="datapeserta" name="datapeserta"
+                        rows="5" cols="20"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdpertama">
+                    <label for="filekarya"><strong>File Karya</strong></label>
+                </td>
+                    <td class="tdsisa">
+                        <input type="file" id="filekarya" name="filekarya"
+                            accept="application/pdf, image/jpeg, image/png" />
+                    </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="submit">
+                    <input type="submit" name="daftar" value="Daftar Lomba"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
